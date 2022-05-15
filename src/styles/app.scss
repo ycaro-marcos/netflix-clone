@@ -1,0 +1,260 @@
+:root {
+  --vermelho: #ff000d;
+  --preto: #000000;
+}
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*ELEMENTOS BASE*/
+body {
+  background: var(--preto);
+  color: white
+}
+
+header .conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 10px;
+  color: var(--vermelho);
+  font-size: 50px;
+
+}
+
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 50px;
+}
+
+header nav a:hover {
+  color: red
+}
+
+/*FILME PRINCIPAL*/
+
+.divPai {
+  min-width: 100vw;
+  min-height: 400px;
+  display: flex;
+  background: #000000;
+}
+
+
+.sinopse {
+  background-color: rgba(5, 5, 5, 0.616);
+  min-height: 100%;
+  float: left;
+  width: 35%;
+  flex-basis: auto;
+}
+
+.sinopseBox {
+  margin-left: 100px;
+  position: absolute;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.relevancia {
+  color: #1FFF00;
+}
+
+.border {
+  border: solid 0.1px;
+  padding: 0 0.3em;
+  border-radius: 5px;
+}
+
+.imagem {
+  min-height: 100%;
+  width: 65%;
+}
+
+.imagem-container {
+  width: auto;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gradient {
+  opacity: 0.7;
+  mask-image: linear-gradient(to left, #141414 60%, #14141414 90%);
+  -webkit-mask-image: linear-gradient(to left, #141414 60%, #14141414 90%);
+
+}
+
+.texto {
+  margin-top: 15px;
+}
+
+.cards {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 100%;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  /* flex-direction: column-reverse; */
+  /* display: flex; */
+}
+
+.imageContainer {
+  height: 220px;
+  width: 170px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.containerPai {
+  height: 280px;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid black;
+  /* creates padding around scroll thumb */
+}
+
+.play-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.play {
+  border: solid 0.2px;
+  border-radius: 5px;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+
+.play:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+  -moz-transition: all .20s ease-in-out;
+  -webkit-transition: all .20s ease-in-out;
+}
+
+.more-info {
+  border: solid 0.2px;
+  border-radius: 5px;
+  padding: 0 0.5em;
+  transition: all 0.10s;
+  cursor: pointer;
+}
+
+.more-info:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+  -moz-transition: all .20s ease-in-out;
+  -webkit-transition: all .20s ease-in-out;
+}
+
+.film-option-container {
+  display: flex;
+  position: fixed;
+}
+
+.option-play-container {
+  display: grid;
+  display: -ms-grid;
+}
+
+.option-info-container {
+  display: grid;
+  display: -ms-grid;
+  margin-left: 20px;
+}
+
+.options-button {
+  background: none;
+  border: none;
+}
+
+.options-button:hover {
+  
+  cursor: pointer
+}
+
+.option-icon {
+  background-color: black;
+  color: red;
+  border-radius: 20px;
+}
+
+.options-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  margin-top: 230px;
+  /* overflow: hidden; */
+  opacity: .1;
+  border-radius: 10px 10px 0 0;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .99s ease-in-out;
+  -webkit-transition: all .99s ease-in-out;
+}
+
+.poster-image:hover {
+  .options-container {
+    opacity: .9;
+    margin-top: 153px;
+  }
+}
+
+.option-play-container:hover{
+  cursor: pointer;
+}
+
+.option-info-container:hover{
+  cursor: pointer;
+}

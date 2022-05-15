@@ -1,0 +1,85 @@
+.slick-slider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.slick-list {
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.slick-slide {
+  outline: none;
+  width: auto !important;
+}
+
+.slick-track {
+  display: flex;
+  width: 100%;
+}
+  
+  
+.slick-slider:hover {
+  
+    
+  .custom-prevArrow {
+    left: 5px;
+  }
+  .custom-nextArrow {
+    right: 5px;
+  }
+
+  .custom-prevArrow,
+  .custom-nextArrow {
+    opacity: 0.9;
+  }
+}
+
+.custom-prevArrow,
+.custom-nextArrow {
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-prevArrow,
+.custom-nextArrow {
+  position: relative;
+  z-index: 99999;
+  top: -10px;
+  opacity: 1; 
+  height: 37px;
+  width: 43px;
+  padding: 0;
+  border-radius: 50px;
+  box-shadow: 0 0.313rem 0.8rem rgba(156, 71, 71, 0.5), 0 0.126rem 0.225rem rgba(156, 71, 71, 0.5);
+  background: #000;
+  z-index: 6;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .20s ease-in-out; 
+  -webkit-transition: all .20s ease-in-out; 
+  background: #000;
+  color: #ff000d;
+}
+.custom-prevArrow {
+  left: -100px;
+}
+  
+.custom-nextArrow {
+  right: -100px;
+}
+
+.custom-prevArrow:hover,
+.custom-nextArrow:hover {
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  background: #ff000d;
+}
